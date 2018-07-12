@@ -1,40 +1,40 @@
 pipeline {
   agent any
   stages {
-    stage('jianchu') {
+    stage('检出') {
       parallel {
-        stage('jianchu') {
+        stage('检出') {
           steps {
-            echo 'jianchu'
+            echo '检出'
           }
         }
-        stage('bingxing jianchu') {
+        stage('并行任务之检出') {
           steps {
-            echo 'bingxingjianchu'
+            echo '并行任务之检出'
           }
         }
-        stage('bingxingjianchu2') {
+        stage('并行任务2之检出') {
           steps {
-            echo 'bingxingjianchu2'
+            echo '并行任务2之检出'
           }
         }
-        stage('bingxingjianchu3') {
+        stage('并行任务3之检出') {
           steps {
-            echo 'bingxingjianchu3'
+            echo '并行任务3之检出'
           }
         }
       }
     }
-    stage('goujian') {
+    stage('构建') {
       parallel {
-        stage('goujian') {
+        stage('构建') {
           steps {
-            echo 'goujian'
+            echo '构建'
           }
         }
-        stage('bingxinggoujian1') {
+        stage('并行任务1之构建') {
           steps {
-            echo 'bingxinggoujian1'
+            echo '并行任务1之构建'
           }
         }
       }
